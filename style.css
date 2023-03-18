@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #86B4A7;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 310px;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: scroll;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.input {
+  height: 45px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+.input input {
+  height: 100%;
+  width: 82%;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  position: relative;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  background: #fff;
+  color: #000;
+  padding-left: 20px;
+}
+.add {
+  width: 50px;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  background: #467DCD;
+  color: black;
+  outline: none;
+  border: none;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.all-todo {
+  width: 95%;
+  height: 275px;
+  margin-top: 15px;
+  overflow: scroll;
+  transition: 1s;
+}
+.list {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  color: #000;
+  margin-top: 7px;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.todos-count {
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.screen {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  overflow: scroll;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 20px;
+}
+.del {
+  height: 100%;
+  width: 50px;
+  font-size: 17px;
+  background: #E86E6E;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-check {
+  display: inline-block;
+  font-size: 25px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 28px;
+  margin: 10px 0px;
+}
+.fa-plus-minus {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/* Custom check Box*/
+.check {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #79A9A0;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+.check :nth-child(1) {
+  height: 29px;
+  transform: rotate(40deg);
+  top: -5px;
+  bottom: 0;
+  left: 10px;
+}
+.check :nth-child(2) {
+  height: 14px;
+  transform: rotate(-40deg);
+  right: 7px;
+}
+.check span {
+  display: inline-block;
+  background: green;
+  position: relative;
+  border-radius: 2px;
+  width: 5px;
+  display: none;
+}
